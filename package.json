@@ -1,5 +1,5 @@
 {
-  "name": "ali@upload-oss",
+  "name": "@ali/upload-oss",
   "version": "0.0.1",
   "main": "./index.js",
   "author": "fangyuan.yzh",
