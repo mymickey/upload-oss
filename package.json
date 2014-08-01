@@ -1,0 +1,17 @@
+{
+  "name": "ali@upload-oss",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "author": "fangyuan.yzh",
+  "description":"description",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:fangyuan.yzh/upload-oss.git"
+  },
+  "dependencies": {
+    "aliyun-oss": "0.2.1",
+    "images":"2.0.2",
+    "node-uuid":"1.4.1",
+    "fileutil":"1.1.1"
+  }
+}

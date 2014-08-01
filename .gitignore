@@ -1,0 +1,14 @@
+# ignore less compiled file
+public/css/*.css
+public/css/component/*.css
+
+# ignore svn
+views/.svn/
+
+.DS_Store
+
+# ignore module
+node_modules/
+
+# ignore log
+npm-debug.log
