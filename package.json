@@ -13,5 +13,8 @@
     "images":"2.0.2",
     "node-uuid":"1.4.1",
     "fileutil":"1.1.1"
-  }
+  },
+  "publishConfig": {
+  "registry": "http://registry.npm.alibaba-inc.com"
+ }
 }
