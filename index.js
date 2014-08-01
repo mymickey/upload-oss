@@ -13,4 +13,7 @@ module.exports = {
 	upload:function(fileName,fn){
 		ossUtil.upload(fileName,fn)
 	}
+	,init:function(k1,k2){
+		ossUtil.init(k1,k2)
+	}
 }
