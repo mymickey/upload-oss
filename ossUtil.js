@@ -3,7 +3,7 @@ var fs = require('fs');
 var OSS = require('aliyun-oss');
 var _util = require('./util')._util;
 var url = require('url');
-var domain = 'http://ossimg.yunos.com/';
+var domain = 'http://ossfile.yunos.com/';
 
 var bucketName = 'yunosshequ';
 var oss ;
