@@ -1,6 +1,6 @@
 {
   "name": "@ali/upload-oss",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "./index.js",
   "author": "fangyuan.yzh",
   "description":"description",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "aliyun-oss": "0.2.1",
-    "images":"2.0.2",
+    "images":"latest",
     "node-uuid":"1.4.1",
     "fileutil":"1.1.1"
   },
