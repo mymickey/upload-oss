@@ -33,7 +33,7 @@ exports.ossUtil= {
 			_fileName = fileName.fileName
 		}
 		var saveName = path.join(dirName , _util.getStorageName(_fileName));
-	    if (!oss){
+	    if (!option){
 	      console.error('oss not init');
 	      return;
 	    }
