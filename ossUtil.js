@@ -5,7 +5,7 @@ var _util = require('./util')._util;
 var url = require('url');
 var domain ; //'http://cdn.bunny-tech.com/'//'http://ossfile.yunos.com/';
 var bucketName = 'bunny-public'//yunosshequ';
-var oss ;
+
 var ossDir = 'pub/';//oss上文件夹名称
 function getCurrentDir(){
 	//根据当年当月生成目录
@@ -21,10 +21,9 @@ exports.ossUtil= {
 		  accessKeySecret: aks
 		};
 		domain = _domain;
-		oss = OSS.createClient(option);
 	},
 	upload:function (fileName,fn){
-		if (!fileName) {
+		if (!fileName && !option) {
 			return;
 		};
 		var dirName = getCurrentDir();
@@ -38,6 +37,7 @@ exports.ossUtil= {
 	      console.error('oss not init');
 	      return;
 	    }
+	    var oss = OSS.createClient(option) ;
 	    oss.putObject({
 			  bucket: bucketName,
 			  object: saveName,//保存的完整路径
