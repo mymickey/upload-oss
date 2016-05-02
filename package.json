@@ -1,20 +1,17 @@
 {
-  "name": "@ali/upload-oss",
-  "version": "0.0.4",
+  "name": "upload-oss",
+  "version": "0.0.1",
   "main": "./index.js",
-  "author": "fangyuan.yzh",
+  "author": "mymickey",
   "description":"description",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.alibaba-inc.com:fangyuan.yzh/upload-oss.git"
+    "url": "https://github.com/mymickey/upload-oss"
   },
   "dependencies": {
     "aliyun-oss": "0.2.1",
-    "images":"latest",
+    "image-size":"latest",
     "node-uuid":"1.4.1",
     "fileutil":"1.1.1"
-  },
-  "publishConfig": {
-  "registry": "http://registry.npm.alibaba-inc.com"
- }
+  }
 }
