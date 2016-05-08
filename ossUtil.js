@@ -38,6 +38,7 @@ exports.ossUtil= {
 	      return;
 	    }
 	    var oss = OSS.createClient(option) ;
+	    console.log('upload config:',bucketName,saveName,_fileName)
 	    oss.putObject({
 			  bucket: bucketName,
 			  object: saveName,//保存的完整路径
@@ -46,6 +47,7 @@ exports.ossUtil= {
 			    'Content-Length': _util.getFileSize(_fileName)
 			  }
 			}, function (err, res) {
+				console.log('upload complate:',err);
 				fn(err,res && res.status == 200 ? url.resolve(domain,saveName) :null);
 			});
 
