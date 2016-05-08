@@ -41,7 +41,7 @@ exports.ossUtil= {
 	      return;
 	    }
 	    var oss = OSS.createClient(option) ;
-	    console.log('upload config:',bucketName,saveName,_fileName,JSON.stringify(option))
+	    console.log('upload config:',option.bucketName,saveName,_fileName,JSON.stringify(option))
 	    oss.putObject({
 			  bucket: option.bucketName,
 			  object: saveName,//保存的完整路径
